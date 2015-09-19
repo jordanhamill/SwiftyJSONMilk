@@ -101,60 +101,60 @@ public final class JSONSerializer: Serializer {
 
     // MARK: Deserialization
 
-    public func deserialize<T: Serializable>() -> T? {
+    public func deserializeValue<T: Serializable>() -> T? {
         return T.deserialize(self)
     }
 
-    public func deserializeForKeyPath<T: Serializable>(keyPath: String) -> T? {
-        let deserializer = JSONSerializer(json: json[keyPath])
-        return T.deserialize(deserializer)
+    public func deserializeValueForKeyPath<T: Serializable>(keyPath: String) -> T? {
+        let deserializeValuer = JSONSerializer(json: json[keyPath])
+        return T.deserialize(deserializeValuer)
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> Bool? {
+    public func deserializeValueForKeyPath(keyPath: String) -> Bool? {
         return json[keyPath].bool
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> Int16? {
+    public func deserializeValueForKeyPath(keyPath: String) -> Int16? {
         return json[keyPath].int16
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> Int32? {
+    public func deserializeValueForKeyPath(keyPath: String) -> Int32? {
         return json[keyPath].int32
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> Int64? {
+    public func deserializeValueForKeyPath(keyPath: String) -> Int64? {
         return json[keyPath].int64
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> Int? {
+    public func deserializeValueForKeyPath(keyPath: String) -> Int? {
         return json[keyPath].int
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> UInt16? {
+    public func deserializeValueForKeyPath(keyPath: String) -> UInt16? {
         return json[keyPath].uInt16
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> UInt32? {
+    public func deserializeValueForKeyPath(keyPath: String) -> UInt32? {
         return json[keyPath].uInt32
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> UInt64? {
+    public func deserializeValueForKeyPath(keyPath: String) -> UInt64? {
         return json[keyPath].uInt64
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> UInt? {
+    public func deserializeValueForKeyPath(keyPath: String) -> UInt? {
         return json[keyPath].uInt
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> Float? {
+    public func deserializeValueForKeyPath(keyPath: String) -> Float? {
         return json[keyPath].float
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> Double? {
+    public func deserializeValueForKeyPath(keyPath: String) -> Double? {
         return json[keyPath].double
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> String? {
+    public func deserializeValueForKeyPath(keyPath: String) -> String? {
         return json[keyPath].string
     }
 
@@ -222,62 +222,62 @@ public final class JSONSerializer: Serializer {
         json[keyPath] = JSON(values)
     }
 
-    public func deserialize<T: Serializable>() -> [T]? {
+    public func deserializeValue<T: Serializable>() -> [T]? {
         //TODO
         return nil
     }
 
-    public func deserializeForKeyPath<T : Serializable>(keyPath: String) -> [T]? {
-        return deserializeForKeyPath(keyPath) { element -> T? in
-            return JSONSerializer(json: element).deserialize()
+    public func deserializeValueForKeyPath<T : Serializable>(keyPath: String) -> [T]? {
+        return deserializeValueForKeyPath(keyPath) { element -> T? in
+            return JSONSerializer(json: element).deserializeValue()
         }
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> [Bool]? {
+    public func deserializeValueForKeyPath(keyPath: String) -> [Bool]? {
         return json[keyPath].object as? [Bool]
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> [Int16]? {
+    public func deserializeValueForKeyPath(keyPath: String) -> [Int16]? {
         return json[keyPath].object as? [Int16]
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> [Int32]? {
+    public func deserializeValueForKeyPath(keyPath: String) -> [Int32]? {
         return json[keyPath].object as? [Int32]
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> [Int64]? {
+    public func deserializeValueForKeyPath(keyPath: String) -> [Int64]? {
         return json[keyPath].object as? [Int64]
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> [Int]? {
+    public func deserializeValueForKeyPath(keyPath: String) -> [Int]? {
         return json[keyPath].object as? [Int]
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> [UInt16]? {
+    public func deserializeValueForKeyPath(keyPath: String) -> [UInt16]? {
         return json[keyPath].object as? [UInt16]
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> [UInt32]? {
+    public func deserializeValueForKeyPath(keyPath: String) -> [UInt32]? {
         return json[keyPath].object as? [UInt32]
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> [UInt64]? {
+    public func deserializeValueForKeyPath(keyPath: String) -> [UInt64]? {
         return json[keyPath].object as? [UInt64]
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> [UInt]? {
+    public func deserializeValueForKeyPath(keyPath: String) -> [UInt]? {
         return json[keyPath].object as? [UInt]
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> [Float]? {
+    public func deserializeValueForKeyPath(keyPath: String) -> [Float]? {
         return json[keyPath].object as? [Float]
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> [Double]? {
+    public func deserializeValueForKeyPath(keyPath: String) -> [Double]? {
         return json[keyPath].object as? [Double]
     }
 
-    public func deserializeForKeyPath(keyPath: String) -> [String]? {
+    public func deserializeValueForKeyPath(keyPath: String) -> [String]? {
         return json[keyPath].object as? [String]
     }
 
@@ -289,18 +289,18 @@ public final class JSONSerializer: Serializer {
         json = []
     }
 
-    private func deserializeForKeyPath<T>(keyPath: String, map: (element: JSON) -> T?) -> [T]? {
-        var deserializedValues: [T]? = nil
+    private func deserializeValueForKeyPath<T>(keyPath: String, map: (element: JSON) -> T?) -> [T]? {
+        var deserializeValuedValues: [T]? = nil
 
         if let json = json[keyPath].array {
-            deserializedValues = []
+            deserializeValuedValues = []
             for element in json {
-                if let deserializedValue: T = map(element: element) {
-                    deserializedValues!.append(deserializedValue)
+                if let deserializeValuedValue: T = map(element: element) {
+                    deserializeValuedValues!.append(deserializeValuedValue)
                 }
             }
         }
         
-        return deserializedValues
+        return deserializeValuedValues
     }
 }

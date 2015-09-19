@@ -12,6 +12,7 @@
 		72108B341BADFFCC0062C586 /* ExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72108B331BADFFCC0062C586 /* ExampleTest.swift */; settings = {ASSET_TAGS = (); }; };
 		72108B361BADFFD80062C586 /* GitHubProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72108B351BADFFD80062C586 /* GitHubProfile.swift */; settings = {ASSET_TAGS = (); }; };
 		72108B381BAE000B0062C586 /* GitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72108B371BAE000B0062C586 /* GitHubRepository.swift */; settings = {ASSET_TAGS = (); }; };
+		72108B3A1BAE02C40062C586 /* CollectionSerializationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72108B391BAE02C40062C586 /* CollectionSerializationSpec.swift */; settings = {ASSET_TAGS = (); }; };
 		7278F9911B9CD702002C63CA /* SwiftyJSONMilk.h in Headers */ = {isa = PBXBuildFile; fileRef = 7278F9901B9CD702002C63CA /* SwiftyJSONMilk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7278F9981B9CD702002C63CA /* SwiftyJSONMilk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7278F98D1B9CD702002C63CA /* SwiftyJSONMilk.framework */; settings = {ASSET_TAGS = (); }; };
 		7278F9AB1B9CDBBB002C63CA /* JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7278F9AA1B9CDBBB002C63CA /* JSONSerializer.swift */; settings = {ASSET_TAGS = (); }; };
@@ -35,6 +36,7 @@
 		72108B331BADFFCC0062C586 /* ExampleTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTest.swift; sourceTree = "<group>"; };
 		72108B351BADFFD80062C586 /* GitHubProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubProfile.swift; sourceTree = "<group>"; };
 		72108B371BAE000B0062C586 /* GitHubRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubRepository.swift; sourceTree = "<group>"; };
+		72108B391BAE02C40062C586 /* CollectionSerializationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionSerializationSpec.swift; sourceTree = "<group>"; };
 		7278F98D1B9CD702002C63CA /* SwiftyJSONMilk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSONMilk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7278F9901B9CD702002C63CA /* SwiftyJSONMilk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJSONMilk.h; sourceTree = "<group>"; };
 		7278F9921B9CD702002C63CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				72108B351BADFFD80062C586 /* GitHubProfile.swift */,
 				72108B371BAE000B0062C586 /* GitHubRepository.swift */,
 				7278F99E1B9CD702002C63CA /* Info.plist */,
+				72108B391BAE02C40062C586 /* CollectionSerializationSpec.swift */,
 			);
 			path = SwiftyJSONMilkTests;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			files = (
 				72108B381BAE000B0062C586 /* GitHubRepository.swift in Sources */,
 				72108B341BADFFCC0062C586 /* ExampleTest.swift in Sources */,
+				72108B3A1BAE02C40062C586 /* CollectionSerializationSpec.swift in Sources */,
 				72108B361BADFFD80062C586 /* GitHubProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

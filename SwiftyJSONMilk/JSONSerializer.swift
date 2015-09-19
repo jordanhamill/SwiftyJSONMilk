@@ -22,7 +22,7 @@ public final class JSONSerializer: Serializer {
         self.json = [:]
     }
 
-    private init(json: JSON) {
+    public init(json: JSON) {
         self.json = json
     }
 
@@ -161,7 +161,12 @@ public final class JSONSerializer: Serializer {
     // MARK: Collections
 
     public func serialize<T: Serializable>(values: [T]) {
-        //TODO
+        let result = values.map { value -> JSON in
+            let serializer = JSONSerializer()
+            value.serialize(serializer)
+            return serializer.json
+        }
+        json = JSON(result)
     }
 
     public func serialize<T: Serializable>(values: [T], forKeyPath keyPath: String) {
@@ -223,8 +228,18 @@ public final class JSONSerializer: Serializer {
     }
 
     public func deserializeValue<T: Serializable>() -> [T]? {
-        //TODO
-        return nil
+        var deserializeValuedValues: [T]? = nil
+
+        if let json = json.array {
+            deserializeValuedValues = []
+            for element in json {
+                if let deserializeValuedValue: T = JSONSerializer(json: element).deserializeValue() {
+                    deserializeValuedValues!.append(deserializeValuedValue)
+                }
+            }
+        }
+
+        return deserializeValuedValues
     }
 
     public func deserializeValueForKeyPath<T : Serializable>(keyPath: String) -> [T]? {

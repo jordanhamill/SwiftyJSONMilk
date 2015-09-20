@@ -12,4 +12,5 @@ Pod::Spec.new do |s|
   s.source_files = 'SwiftyJSONMilk/**/*.{h,m,swift}'
   s.requires_arc = true
   s.dependency 'Milk'
+  s.dependency 'SwiftyJSON'
 end

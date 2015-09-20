@@ -6,7 +6,7 @@
 //  Copyright © 2015 JordanHamill. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for SwiftyJSONMilk.
 FOUNDATION_EXPORT double SwiftyJSONMilkVersionNumber;

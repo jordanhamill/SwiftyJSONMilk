@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7202E0D91BAEBF1600E6E721 /* SwiftyJSONMilk-OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 7202E0D81BAEBF1600E6E721 /* SwiftyJSONMilk-OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7202E0E01BAEBF1600E6E721 /* SwiftyJSONMilk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7202E0D61BAEBF1600E6E721 /* SwiftyJSONMilk.framework */; settings = {ASSET_TAGS = (); }; };
-		7202E0E51BAEBF1600E6E721 /* SwiftyJSONMilk_OSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7202E0E41BAEBF1600E6E721 /* SwiftyJSONMilk_OSXTests.swift */; };
 		7202E0EF1BAEBFDA00E6E721 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7202E0ED1BAEBFDA00E6E721 /* SwiftyJSON.framework */; };
 		7202E0F01BAEBFDA00E6E721 /* Milk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7202E0EE1BAEBFDA00E6E721 /* Milk.framework */; };
 		7202E0F21BAEC14C00E6E721 /* JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7278F9AA1B9CDBBB002C63CA /* JSONSerializer.swift */; settings = {ASSET_TAGS = (); }; };
+		7202E0F31BAEC51D00E6E721 /* ExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72108B331BADFFCC0062C586 /* ExampleTest.swift */; settings = {ASSET_TAGS = (); }; };
+		7202E0F41BAEC51D00E6E721 /* GitHubProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72108B351BADFFD80062C586 /* GitHubProfile.swift */; settings = {ASSET_TAGS = (); }; };
+		7202E0F51BAEC51D00E6E721 /* GitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72108B371BAE000B0062C586 /* GitHubRepository.swift */; settings = {ASSET_TAGS = (); }; };
+		7202E0F61BAEC51D00E6E721 /* CollectionSerializationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72108B391BAE02C40062C586 /* CollectionSerializationSpec.swift */; settings = {ASSET_TAGS = (); }; };
+		7202E0F71BAEC56500E6E721 /* Milk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7202E0EE1BAEBFDA00E6E721 /* Milk.framework */; };
+		7202E0FA1BAEC56600E6E721 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7202E0F81BAEC56600E6E721 /* Quick.framework */; };
+		7202E0FB1BAEC56600E6E721 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7202E0F91BAEC56600E6E721 /* Nimble.framework */; };
 		72108B281BADFF630062C586 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72108B261BADFF630062C586 /* Quick.framework */; };
 		72108B291BADFF630062C586 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72108B271BADFF630062C586 /* Nimble.framework */; };
 		72108B341BADFFCC0062C586 /* ExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72108B331BADFFCC0062C586 /* ExampleTest.swift */; settings = {ASSET_TAGS = (); }; };
@@ -45,13 +50,11 @@
 
 /* Begin PBXFileReference section */
 		7202E0D61BAEBF1600E6E721 /* SwiftyJSONMilk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSONMilk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7202E0D81BAEBF1600E6E721 /* SwiftyJSONMilk-OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSONMilk-OSX.h"; sourceTree = "<group>"; };
-		7202E0DA1BAEBF1600E6E721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7202E0DF1BAEBF1600E6E721 /* SwiftyJSONMilk-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyJSONMilk-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7202E0E41BAEBF1600E6E721 /* SwiftyJSONMilk_OSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSONMilk_OSXTests.swift; sourceTree = "<group>"; };
-		7202E0E61BAEBF1600E6E721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7202E0ED1BAEBFDA00E6E721 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		7202E0EE1BAEBFDA00E6E721 /* Milk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Milk.framework; path = Carthage/Build/Mac/Milk.framework; sourceTree = "<group>"; };
+		7202E0F81BAEC56600E6E721 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		7202E0F91BAEC56600E6E721 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		72108B261BADFF630062C586 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		72108B271BADFF630062C586 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		72108B331BADFFCC0062C586 /* ExampleTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTest.swift; sourceTree = "<group>"; };
@@ -82,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7202E0FA1BAEC56600E6E721 /* Quick.framework in Frameworks */,
+				7202E0FB1BAEC56600E6E721 /* Nimble.framework in Frameworks */,
+				7202E0F71BAEC56500E6E721 /* Milk.framework in Frameworks */,
 				7202E0E01BAEBF1600E6E721 /* SwiftyJSONMilk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,27 +114,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7202E0D71BAEBF1600E6E721 /* SwiftyJSONMilk-OSX */ = {
-			isa = PBXGroup;
-			children = (
-				7202E0D81BAEBF1600E6E721 /* SwiftyJSONMilk-OSX.h */,
-				7202E0DA1BAEBF1600E6E721 /* Info.plist */,
-			);
-			path = "SwiftyJSONMilk-OSX";
-			sourceTree = "<group>";
-		};
-		7202E0E31BAEBF1600E6E721 /* SwiftyJSONMilk-OSXTests */ = {
-			isa = PBXGroup;
-			children = (
-				7202E0E41BAEBF1600E6E721 /* SwiftyJSONMilk_OSXTests.swift */,
-				7202E0E61BAEBF1600E6E721 /* Info.plist */,
-			);
-			path = "SwiftyJSONMilk-OSXTests";
-			sourceTree = "<group>";
-		};
 		7278F9831B9CD702002C63CA = {
 			isa = PBXGroup;
 			children = (
+				7202E0F81BAEC56600E6E721 /* Quick.framework */,
+				7202E0F91BAEC56600E6E721 /* Nimble.framework */,
 				7202E0ED1BAEBFDA00E6E721 /* SwiftyJSON.framework */,
 				7202E0EE1BAEBFDA00E6E721 /* Milk.framework */,
 				72108B261BADFF630062C586 /* Quick.framework */,
@@ -137,8 +127,6 @@
 				7278F9B11B9CE1AA002C63CA /* SwiftyJSON.framework */,
 				7278F98F1B9CD702002C63CA /* SwiftyJSONMilk */,
 				7278F99B1B9CD702002C63CA /* SwiftyJSONMilkTests */,
-				7202E0D71BAEBF1600E6E721 /* SwiftyJSONMilk-OSX */,
-				7202E0E31BAEBF1600E6E721 /* SwiftyJSONMilk-OSXTests */,
 				7278F98E1B9CD702002C63CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -183,7 +171,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7202E0D91BAEBF1600E6E721 /* SwiftyJSONMilk-OSX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +210,7 @@
 				7202E0DB1BAEBF1600E6E721 /* Sources */,
 				7202E0DC1BAEBF1600E6E721 /* Frameworks */,
 				7202E0DD1BAEBF1600E6E721 /* Resources */,
+				7202E0FC1BAEC56E00E6E721 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -347,6 +335,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7202E0FC1BAEC56E00E6E721 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Milk.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		72108B2A1BADFF6D0062C586 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,7 +384,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7202E0E51BAEBF1600E6E721 /* SwiftyJSONMilk_OSXTests.swift in Sources */,
+				7202E0F51BAEC51D00E6E721 /* GitHubRepository.swift in Sources */,
+				7202E0F41BAEC51D00E6E721 /* GitHubProfile.swift in Sources */,
+				7202E0F31BAEC51D00E6E721 /* ExampleTest.swift in Sources */,
+				7202E0F61BAEC51D00E6E721 /* CollectionSerializationSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +439,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "SwiftyJSONMilk-OSX/Info.plist";
+				INFOPLIST_FILE = SwiftyJSONMilk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -455,7 +463,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "SwiftyJSONMilk-OSX/Info.plist";
+				INFOPLIST_FILE = SwiftyJSONMilk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -470,7 +478,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "SwiftyJSONMilk-OSXTests/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = SwiftyJSONMilkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jordanhamill.SwiftyJSONMilk-OSXTests";
@@ -483,7 +495,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "SwiftyJSONMilk-OSXTests/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = SwiftyJSONMilkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jordanhamill.SwiftyJSONMilk-OSXTests";

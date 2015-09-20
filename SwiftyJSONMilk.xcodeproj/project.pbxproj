@@ -242,7 +242,6 @@
 				7278F9891B9CD702002C63CA /* Frameworks */,
 				7278F98A1B9CD702002C63CA /* Headers */,
 				7278F98B1B9CD702002C63CA /* Resources */,
-				7278F9A91B9CDB65002C63CA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -356,21 +355,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Milk.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		7278F9A91B9CDB65002C63CA /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Milk.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);

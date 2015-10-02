@@ -26,12 +26,13 @@ public final class JSONSerializer: Serializer {
         self.json = json
     }
 
+
+    public init(data: NSData) throws {
+        self.json = JSON(data: data, options: NSJSONReadingOptions())
+    }
+
     // MARK: Public methods
 
-    public static func fromData(data: NSData) throws -> JSONSerializer? {
-        let json = JSON(data: data, options: NSJSONReadingOptions())
-        return JSONSerializer(json: json)
-    }
 
     public func toData() throws -> NSData? {
         return try json.rawData()

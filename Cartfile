@@ -1,2 +1,2 @@
-github "SwiftyJSON/SwiftyJSON" "xcode7"
+github "SwiftyJSON/SwiftyJSON"
 github "jordanhamill/Milk"
